@@ -13,21 +13,21 @@ const setupInput = function(conn) {
 const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
-  } else if (key === 'w') {
+  } else if (key === 'w' || key === 'W') {
     connection.write("Move: up");
-  } else if (key === 'a') {
+  } else if (key === 'a' || key === 'A') {
     connection.write("Move: left");
-  } else if (key === 's') {
+  } else if (key === 's' || key === 'S') {
     connection.write("Move: down");
-  } else if (key === 'd') {
+  } else if (key === 'd' || key === 'D') {
     connection.write("Move: right");
-  } else if (key === 'q') {
+  } else if (key === 'q' || key === 'Q') {
     connection.write("Say: Hello");
-  } else if (key === 't') {
+  } else if (key === 't' || key === 'T') {
     connection.write("Say: Bye!");
-  } else if (key === 'e') {
+  } else if (key === 'e' || key === 'E') {
     connection.write("Say: Good luck");
-  } else if (key === 'j') {
+  } else if (key === 'j' || key === 'J') {
     connection.write("Say: Hungry");
   }
 };
