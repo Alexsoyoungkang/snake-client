@@ -9,7 +9,7 @@ Before you can run this client, you will need to be running the server side whic
 ## Final Product
 
 !["snakegame"]
-!["snakegame2"]
+!["snakegame2"](https://raw.githubusercontent.com/Alexsoyoungkang/snake-client/7d41fb7f5de61359b960a213b3ef743b5c0f9c38/snakegame2.png)
 
 
 ## Getting Started
