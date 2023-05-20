@@ -10,6 +10,7 @@ const setupInput = function(conn) {
   return stdin;
 };
 
+// special keys to match with the movement and messages
 const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
@@ -21,13 +22,13 @@ const handleUserInput = function(key) {
     connection.write("Move: down");
   } else if (key === 'd' || key === 'D') {
     connection.write("Move: right");
-  } else if (key === 'q' || key === 'Q') {
-    connection.write("Say: Hello");
-  } else if (key === 't' || key === 'T') {
-    connection.write("Say: Bye!");
-  } else if (key === 'e' || key === 'E') {
-    connection.write("Say: Good luck");
   } else if (key === 'j' || key === 'J') {
+    connection.write("Say: Attack!");
+  } else if (key === 'k' || key === 'K') {
+    connection.write("Say: Keep moving");
+  } else if (key === 'i' || key === 'I') {
+    connection.write("Say: Move faster");
+  } else if (key === 'l' || key === 'L') {
     connection.write("Say: Hungry");
   }
 };
